@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# Project Name city explorer 
+# Project Name city explorer
 
 **Author**: Dena kofahi
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
