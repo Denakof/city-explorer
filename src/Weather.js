@@ -1,20 +1,20 @@
 import React from 'react';
 
-class Weather extends React.Component{
-render(){
-    return(
-        <>
-        <div>
+class Weather extends React.Component {
+    render() {
+        return (
+            <>
+                <div>
 
-{this.props.days.map(day =>{
-    return <> <>{day.date} <>
-     {day.description}</></> </>
+                    {this.props.days.map(day => {
+                        return <> <>{day.date} <>
+                            {day.description}</></> </>
 
-    
-})}        </div>
-        </>
-    )
-}
+
+                    })}        </div>
+            </>
+        )
+    }
 
 
 

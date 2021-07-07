@@ -28,7 +28,7 @@ export class App extends React.Component {
     let resData = await axios.get(url);
     console.log(resData.data[0])
 
-    let url2 = `https://dk-city-explorer.herokuapp.com/weather/?city_name=${e.target.city.value}&format=json`;
+    let url2 = `${process.env.REACT_APP_SERVER}/weather/?city_name=${e.target.city.value}&format=json`;
     let resData2 = await axios.get(url2);
     console.log(resData2);
 
@@ -61,11 +61,11 @@ export class App extends React.Component {
         </form>
         {this.state.showMap &&
  <p>Cityname:={this.state.cityname}{this.state.lon},{this.state.lat}</p>}
+         {this.state.showWeather && <Weather days={this.state.days} /> }
 
 {this.state.showMap &&
         <img alt='' src={`https://maps.locationiq.com/v3/staticmap?key=pk.f43e224bdcdc2ff03a90503f072090c0&center=${this.state.lat},${this.state.lon}&zoom=15`} />}
 
-         {this.state.showWeather && <Weather days={this.state.days} /> }
       </>
 
     )
