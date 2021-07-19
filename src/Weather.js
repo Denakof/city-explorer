@@ -7,8 +7,8 @@ class Weather extends React.Component {
                 <div>
 
                     {this.props.days.map(day => {
-                        return <> <>{day.date} <>
-                            {day.description}</></> </>
+                        return  <>{day.date} <>
+                            {day.description}</> </>
 
 
                     })}        </div>
